@@ -1,0 +1,43 @@
+@import "vars";
+@import "mixins";
+
+html {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: "Montserrat";
+  font-size: 16px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+body {
+   margin: 0;padding: 0; 
+}
+
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,li {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  @include min-max(320px,100%,0);
+}
+
+.wrap {
+  @include min-max(320px,1200px,15px);
+}
